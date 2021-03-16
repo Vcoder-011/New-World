@@ -1,0 +1,41 @@
+body{
+  margin:0;
+}
+
+.container{
+width: 80%;
+margin:auto;
+overflow: hidden;
+}
+
+.nav{
+  padding: 5px 25px;
+  font-size: 18px;
+  font-family: 'Heebo', sans-serif;
+  background-color: #000000;
+  border: none;
+  color: white;
+  text-align: center;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav:hover {opacity: 1;}
+
+
+
+#navbar{
+  background: black;
+  color:white;
+}
+
+#NW{
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  margin: 0;
+}
+

@@ -5,31 +5,103 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="CSS/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
   <title>New World</title>
 
 </head>
 <body>
+<!--Gate Keeper-->
+<div id="gatekeeper">
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+</div>
+
+<div>
+    <label for="pass">Password:</label>
+    <input type="password" id="pass" name="password" required>
+</div>
+
+<input type="submit" value="Sign in" onclick="userPass()">
+</div>
+<!--Website-->
+<div id="website">
+  <header id="nwheader">
+      <h1 id="NW">NW</h1>
+  </header>
 
   <header id="navbar">
     <div class="container">
-      <h1 id="NW">NW
         <nav>
-          <p class="nav">Home</p>
-          <p class="nav">Development path</p>
-          <p class="nav">Character Page</p>
-          <p class="nav">Encounter Runner</p>
-          <p class="nav">Sci Skill Tree</p>
-          <p class="nav">Bestiary</p>
-          <p class="nav">Map</p>
+          <p class="nav" id="nav0" onclick="resetColor(); this.style.opacity = 1; tab('homePage');">Home</p>
+          <p class="nav" id="nav1" onclick="resetColor(); this.style.opacity = 1; tab('developmentPathPage');">Development Path</p>
+          <p class="nav" id="nav2" onclick="resetColor(); this.style.opacity = 1; tab('characterScreenPage');">Character Screen</p>
+          <p class="nav" id="nav3" onclick="resetColor(); this.style.opacity = 1; tab('encounterRunnerPage');">Encounter Runner</p>
+          <p class="nav" id="nav4" onclick="resetColor(); this.style.opacity = 1; tab('sciSkillTreePage');">Sci Skill Tree</p>
+          <p class="nav" id="nav5" onclick="resetColor(); this.style.opacity = 1; tab('NPCListPage');">NPC List</p>
+          <p class="nav" id="nav6" onclick="resetColor(); this.style.opacity = 1; tab('mapPage');">Map</p>
         </nav>
-      </h1>
     </div>
   </header>
+  <!--Home-->
+  <div id="homePage">
+<img src="Images/rip.jpg">
+  </div>
 
-  <script src="main.js"></script>
+  <!--Development Path-->
+  <div id="developmentPathPage">
+  <img src="Images/rip.jpg">
+  <img src="Images/rip.jpg">
+  </div>
 
+    <!--Character Screen-->
+  <div id="characterScreenPage">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+  </div>
+
+    <!--Encounter Runner-->
+  <div id="encounterRunnerPage">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+  </div>
+
+    <!--Sci Skill Tree-->
+  <div id="sciSkillTreePage">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+  </div>
+
+    <!--NPC List-->
+  <div id="NPCListPage">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+  </div>
+
+    <!--Map-->
+  <div id="mapPage">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+    <img src="Images/rip.jpg">
+  </div>
+</div>
+
+  <script src="Javascript/main.js"></script>
 </body>
 </html>
